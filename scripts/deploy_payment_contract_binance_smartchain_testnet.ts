@@ -4,7 +4,7 @@ import * as paymentContract from "../artifacts/contracts/PaymentContract.sol/Pay
 
 async function main() {
     const signer = await initWalletByProvider(process.env.TESTNET_BINANCE_RPC_URL);
-    console.log("Deploying Payment Contract");
+    console.log("Deploying Stream Payment Contract");
     const pContractFactory = new ethers.ContractFactory(
         paymentContract.abi, 
         paymentContract.bytecode,
@@ -13,7 +13,7 @@ async function main() {
     const pcontract = await pContractFactory.deploy();
     await pcontract.deployed();
     console.log("Completed");
-    console.log(`Payment Contract deployed at ${pcontract.address}`);
+    console.log(`Stream Payment Contract deployed at ${pcontract.address}`);
 }
 
 main().catch((error) => {
