@@ -2,6 +2,8 @@
 
 *Contracts responsible for the settlement of the web3 payment*
 
+StreamPay is a checkout solution that allows businesses to start accepting cryptocurrency payments. It is built on the Solana platform, which provides a secure checkout experience for customers. The solution is easy to use and can be set up in just a few clicks, making it a convenient option for businesses looking to start accepting crypto payments.
+
 ## Testnets
 
 ### Network **Goerli**
